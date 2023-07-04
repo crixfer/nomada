@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Components</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .feature-icon {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 0.75rem;
+      }
+
+      /* IMAGES */
+      .mudanza {
+        border-radius: 8px;
+      }
+      .box {
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              class="box"
+              src="./box-seam.svg"
+              height="30px"
+              alt="nomada logo"
+            />
+            nómada</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Conócenos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Menú
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Servicios</a></li>
+                  <li><a class="dropdown-item" href="#">Código Postal</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Check</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-info" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <div class="px-4 py-5 my-5 text-center">
+        <img
+          class="mudanza d-block mx-auto mb-4"
+          src="./mudanza.jpeg"
+          alt=""
+          height="500"
+        />
+        <h1 class="display-5 fw-bold text-body-emphasis">Múdate sin miedo</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">
+            Gracias por elegirnos! Haremos todo en nuestro poder para que tus
+            bienes lleguen en <b>perfectas condiciones</b> a su lugar de
+            destino. Somos una compañia que primero se preocupa, y luego trabaja
+            para obtener los mejores resultados posibles.
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">
+              Cuotas
+            </button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+              Contáctanos
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- FEATURES -->
+
+      <div class="container">
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="feature col">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+            >
+              <img src="./briefcase.svg" alt="briefcase" height="30" />
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Profesionales</h3>
+            <p>
+              Nuestro equipo de profesionales está altamente entrenado para
+              priorizar eficiencia, organización y atención a los más mínimos
+              detalles. Entendemos que sus posesiones son mucho más que solo un
+              objeto. Es por esto que tomamos precaución extra para asegurarnos
+              de que todo está perfectamente empacado y transportado con extremo
+              cuidado.
+            </p>
+            <a href="#" class="icon-link">
+              Tarifas
+              <img src="./chevron-right.svg" alt="chevron right" />
+            </a>
+          </div>
+          <div class="feature col">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+            >
+              <img src="./bus-front.svg" alt="bus front" height="30" />
+            </div>
+            <h3 class="fs-2 text-body-emphasis">En todo el país</h3>
+            <p>
+              Ofrecemos una gran variedad de servicios para satisfacer sus
+              necesidades individuales, ya sea que se este mudando en su area
+              local o a travez del pais. Nuestro equipo puede manejar todo,
+              desde el empaque y carga, hasta descarga completa y su desempaque,
+              para que usted se concentre en como organizar su nuevo hogar.
+            </p>
+
+            <a href="#" class="icon-link">
+              Tarifas
+              <img src="./chevron-right.svg" alt="chevron right" />
+            </a>
+          </div>
+          <div class="feature col">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+            >
+              <img
+                src="./chat-square-heart.svg"
+                alt="chat square heart"
+                height="30"
+              />
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Personalizamos</h3>
+            <p>
+              Nos caracterizamos por creer que mudarse debe ser una experiencia
+              emocionante y positiva, y para nada estresante. Proveyendo un
+              servicio excepcional en todo el país, esperamos revolucionar la
+              manera en que las personas piensan sobre las mudanzas, creando una
+              más personalizada experiencia para nuestros clientes siempre.
+            </p>
+            <a href="#" class="icon-link">
+              Tarifas
+              <img src="./chevron-right.svg" alt="chevron right" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CAROUSEL -->
+      <div class="container">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./couple.jpg"
+                class="d-block w-100"
+                alt="a couple moving"
+              />
+            </div>
+            <div class="carousel-item">
+              <img src="./dog.jpg" class="d-block w-100" alt="a dog in a box" />
+            </div>
+            <div class="carousel-item">
+              <img src="./family.jpg" class="d-block w-100" alt="a family" />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            href="/"
+            class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+          >
+            <img src="./box-seam.svg" height="17" alt="nómada logo" />
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary"
+            >© 2023 nómada, SRL</span
+          >
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#"
+              ><img src="./twitter.svg" alt="twitter logo"
+            /></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#"
+              ><img src="./instagram.svg" alt="instagram logo"
+            /></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#"
+              ><img src="./whatsapp.svg" alt="whatsapp logo"
+            /></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
